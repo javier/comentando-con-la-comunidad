@@ -1,0 +1,34 @@
+<h2 class="section-title">{{ .titles.schedule }}</h2>
+
+<p>El directo se emitirá los <strong>jueves de las primeras dos semanas</strong>, y <strong>el miércoles</strong> de la última. Siempre a las 6 de la
+  tarde (horario CET). La idea es que cada episodio dure entre una hora y una hora y media. Ya lo vamos viendo.</p>
+<div class="schedule-tbl">
+  <table>
+    <thead>
+      <tr>
+        <th class="schedule-slot">Día</th>
+        <th class="schedule-time">Hora</th>
+        <th class="schedule-description">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $slot := .schedule }}
+        {{ if ne .presentation nil }}
+          <tr>
+            <td class="schedule-slot">
+              <span class="speakers-company">{{ .presentation.day }}</span>
+            </td>
+            <td class="schedule-time">{{ .presentation.time }}</td>
+            <td class="schedule-description">{{ .presentation.description }}</td>
+          </tr>
+        {{ else }}
+          <tr class="schedule-other">
+            <td class="schedule-time">{{ .time }}</td>
+            <td class="schedule-slot">{{ .name }}</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,140 @@
+baseurl: "https://comentando-con-la-comunidad.javier.cloud/"
+title: "Comentando re:Invent con la comunidad AWS"
+canonifyurls: true
+theme: "hugo-conference"
+
+GoogleAnalytics: ""
+
+params:
+  # Conference info
+  Name: "Comentando re:Invent con la comunidad AWS"
+  Description: "Conference description"
+  Date: "Los jueves 3, 10, y 16 de Diciembre 2020"
+  # Price: "Only $100" # If your event is free, just comment this line
+  Venue: "Twitch y YouTube Live"
+  Address: "Boulevard Kukulcan, 30"
+  City:  "YouTube Live"
+  State: "Quintana"
+  Images: ["/img/ComentandoReInventConLaComunidadAWS.png"]
+  # GoogleMapsKey: "my-secret-maps-key"
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - location
+    - speakers
+    - schedule
+    #- sponsors
+    - partners
+    #- contact
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "¿Qué es esto?"
+    location: "¿Cómo lo sigo?"
+    speakers: "Participantes"
+    schedule: "Agenda"
+    sponsors: "Sponsors"
+    partners: "En colaboración con"
+    contact: "Contact"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+ # CallToAction:
+ #   text: "Register now!"
+ #   link: "http://register.example.com"
+
+  # Fork me on GitHub, if you don't want this, just remove the forkButton property
+  #ForkButton:
+  #  repository: "https://github.com/jweslley/hugo-conference/"
+
+  # List of Sponsors
+  Sponsors:
+    - name: ""
+      logo: "/img/hugo.png"
+      url: "http://gohugo.io"
+
+  # List of Partners
+  Partners:
+    - name: "Grupos de usuarios de AWS en España"
+      logo: "/img/aws-user-groups-logo.png"
+      url: "https://aws.amazon.com/developer/community/usergroups/europe/"
+
+  # The entire schedule
+  Speakers:
+    - name: "Javier"
+      photo: "/img/javier.jpg"
+      bio: "Developer Advocate en Amazon Web Services. Si todo va bien, hablará menos que el resto de gente. Si se pone muy pesado, decídselo por el chat."
+      link:
+        href: "https://twitter.com/supercoco9"
+        text: "@supercoco9"
+
+    - name: "Tasia"
+      photo: "/img/anastasia.jpg"
+      bio: "Sysadmina Junior. Mother of cats. Una de las personas detrás de la TotoConf. Le llevó casi 30 segundos aceptar la invitación para participar en el show."
+      link:
+        href: "https://twitter.com/AnastasiaKnt"
+        text: "@AnastasiaKnt"
+
+    - name: "Daniel"
+      photo: "/img/daniel.jpg"
+      bio: "Arquitecto de nube y domador de contenedores. Co-organiza el grupo de usuari@s de AWS en Palma de Mallorca, entre otros eventos. Está reconocido como uno de los Community Builders de AWS."
+      link:
+        href: "https://twitter.com/droomPMI"
+        text: "@droomPMI"
+
+    - name: "Nelo"
+      photo: "/img/nelo.jpg"
+      bio: "A la que te descuidas, te ha desplegado un Kafka. Es una de las caras más visibles del grupo de usuari@s de AWS en Valencia y es también uno de los Community Builders oficiales de AWS."
+      link:
+        href: "https://twitter.com/NeloPG"
+        text: "@NeloPG"
+
+    - name: "Álvaro"
+      photo: "/img/alvaro.jpg"
+      bio: "Si hay algo que Álvaro no sepa de PostgreSQL es porque todavía no lo ha implementado él mismo. Escribe posts sobre datos que te dan la vuelta al cerebro. Si le preguntas por DynamoDB, hay diversión asegurada. Está reconocido como un AWS Community Hero en la categoría de datos."
+      link:
+        href: "https://twitter.com/ahachete"
+        text: "@ahachete"
+
+    - name: "Manrique"
+      photo: "/img/manrique.jpg"
+      bio: "Manrique es de las caras más reconocibles del open source mundial. Desde Bitergia se encarga de analizar las dinámicas de las comunidades OS. Y por si fuera poco, lo peta con ElasticSearch. No es una sorpresa que sea uno de los AWS Community Heroes en la categoría de datos."
+      link:
+        href: "https://twitter.com/jsmanrique"
+        text: "@jsmanrique"
+
+    - name: "Christian"
+      photo: "/img/christian.jpg"
+      bio: "Además de co-organizar el DevOps Days de Madrid, co-organiza el grupo de usuari@s AWS de Madrid. Seguramente le habrás visto hablar en alguna conferencia, normalmente de sistemas. Tiene el super poder de estar siempre sonriente."
+      link:
+        href: "https://twitter.com/christianmldz"
+        text: "@christianmldz"
+
+    - name: "Julio"
+      photo: "/img/julio.jpg"
+      bio: "Nadie lo sabe todo sobre AWS, pero Julio está todo lo cerca que se puede. AWS Community Builder, arquitecto de nube, formador, y antiguo empleado de AWS. Si llevas más de dos años usando AWS seguro que le recuerdas de algunos videos antiguos."
+      link:
+        href: "https://twitter.com/faermanj"
+        text: "@faermanj"
+
+
+
+
+
+  # The entire schedule
+  Schedule:
+    - presentation:
+        day: "Jueves 3"
+        description: "Esta primera semana es todo hype. Andy Jassy habrá anunciado todo tipo de servicios y mejoras y con un poco de suerte el molómetro andará desatado. O no. La comunidad dirá."
+        time: "18:00 CET"
+    - presentation:
+        day: "Jueves 10"
+        description: "Esta segunda semana hablaremos un poco de todo, pero como se habrá emitido recientemente la keynote de Machine Learning, es fácil que nos centremos en ese tipo de temas. A no ser que nos apetezca hablar de otra cosa, claro. Mientras esté relacionado con re:Invent todo vale"
+        time: "18:00 CET"
+    - presentation:
+        day: "Miércoles 16"
+        description: "Última semana del maratón. Tendremos fresquita la keynote de Werner, lo que significa que una vez más hablaremos de lo que mejor nos parezca. Bueno, o de lo que os parezca, que ya sabéis que podéis influir desde el chat."
+        time: "18:00 CET"
+

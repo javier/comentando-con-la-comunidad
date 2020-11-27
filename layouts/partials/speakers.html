@@ -1,0 +1,23 @@
+<h2 class="section-title">{{ .titles.speakers }}</h2>
+<p>Aquí tienes la lista provisional de quienes han confirmado su presencia en alguno de los episodios. Hay quien repetirá
+  y hay quien vendrá solo una vez. De quien no te libras es de <a hre="https://twitter.com/supercoco9">Javier Ramírez</a>,
+  que es el encargado de encender las luces al llegar y echar la persiana al salir.
+</p>
+<ul class="speakers-list">
+{{ range $speaker := .speakers }}
+  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+    {{ with .photo }}
+      <span class="speaker-photo">
+        <img class="photo" src="{{ . }}" alt="{{ $speaker.name }}" itemprop="image">
+      </span>
+    {{ end }}
+
+    <h3 class="speakers-name">{{ .name }}
+      {{ with .link }}
+      <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+      {{ end }}
+    </h3>
+    <p class="speakers-bio">{{ .bio }}</p>
+  </li>
+{{ end }}
+</ul>
